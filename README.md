@@ -135,7 +135,7 @@ cd ../frontend && npm install
 cd backend
 cp .env.example .env
 
-Edit .env with your MongoDB URI and a strong JWT_SECRET.
+Edit backend/.env with your MongoDB URI, JWT_SECRET, and optional Cloudinary keys. Do not commit .env — it is gitignored.
 
 3. Seed the database
 
@@ -173,17 +173,19 @@ Login at /login. Use the Employee or Manager tab on the auth page. Admins can si
 
 File Storage
 
+Privacy: nothing sensitive is stored in this repository. The backend/.env file and backend/uploads/ user files are gitignored. Each developer clones the project, creates their own .env from .env.example, and their uploads stay on their machine or their own Cloudinary account.
+
 Local (default)
-Profile pictures and leave attachments are saved in backend/uploads/. Files are served at /uploads/... and proxied to the backend during development. No cloud account is required.
+Profile pictures and leave attachments are saved in backend/uploads/ on your machine. The folder starts empty (only .gitkeep). Files are served at /uploads/... and proxied to the backend during development. No cloud account is required.
 
 Cloudinary (optional)
-Add these variables to backend/.env:
+Add your own credentials to backend/.env (never commit this file):
 
 CLOUDINARY_CLOUD_NAME=your-cloud-name
 CLOUDINARY_API_KEY=your-api-key
 CLOUDINARY_API_SECRET=your-api-secret
 
-Use the Root API key from Cloudinary Dashboard → Settings → API Keys. Uploads use signed server-side uploads to leavedesk/profiles/ and leavedesk/attachments/. On startup the server logs "Cloudinary ready" when credentials are valid.
+Use the Root API key from Cloudinary Dashboard → Settings → API Keys. Uploads use signed server-side uploads to leavedesk/profiles/ and leavedesk/attachments/ in your Cloudinary account. On startup the server logs "Cloudinary ready" when credentials are valid.
 
 Application Flow
 
