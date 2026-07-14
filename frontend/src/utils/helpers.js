@@ -17,18 +17,6 @@ export const formatLeaveType = (type) => {
   return labels[type] || type;
 };
 
-export const getStatusBadge = (status) => {
-  const classes = {
-    pending: 'badge-pending',
-    approved: 'badge-approved',
-    rejected: 'badge-rejected',
-    info_requested: 'badge-info',
-    active: 'badge-approved',
-    inactive: 'badge-rejected',
-  };
-  return classes[status] || 'badge-pending';
-};
-
 export const capitalize = (str) => {
   if (!str) return '';
   return str.charAt(0).toUpperCase() + str.slice(1).replace(/_/g, ' ');

@@ -9,9 +9,8 @@ frontend/.env
 .DS_Store
 Thumbs.db
 
-# Backend local uploads — never commit user files (privacy)
-backend/uploads/**
-!backend/uploads/.gitkeep
+# Backend local uploads — user files stay on your machine only, never on GitHub
+backend/uploads/
 
 # Frontend production build
 frontend/dist/

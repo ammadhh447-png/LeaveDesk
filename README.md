@@ -176,7 +176,7 @@ File Storage
 Privacy: nothing sensitive is stored in this repository. The backend/.env file and backend/uploads/ user files are gitignored. Each developer clones the project, creates their own .env from .env.example, and their uploads stay on their machine or their own Cloudinary account.
 
 Local (default)
-Profile pictures and leave attachments are saved in backend/uploads/ on your machine. The folder starts empty (only .gitkeep). Files are served at /uploads/... and proxied to the backend during development. No cloud account is required.
+Profile pictures and leave attachments are saved in backend/uploads/profiles/ and backend/uploads/attachments/ on your machine. Files are served at /uploads/... and proxied to the backend during development. No cloud account is required.
 
 Cloudinary (optional)
 Add your own credentials to backend/.env (never commit this file):
