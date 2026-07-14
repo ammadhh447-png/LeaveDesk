@@ -1,0 +1,18 @@
+node_modules/
+.env
+*.log
+.DS_Store
+Thumbs.db
+
+# Backend local uploads (keep folder marker only)
+backend/uploads/*
+!backend/uploads/.gitkeep
+
+# Frontend production build
+frontend/dist/
+
+# Editor and OS
+.vscode/
+.idea/
+*.swp
+*.swo
