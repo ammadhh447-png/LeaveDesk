@@ -123,6 +123,7 @@ employee-leave-portal
 | JWT_SECRET | Secret Key |
 | CLIENT_URL | Frontend URL |
 | CLOUDINARY_* | Cloudinary Credentials |
+Checkout the requirements in backend/.env.example
 
 ---
 
