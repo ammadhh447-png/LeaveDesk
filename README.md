@@ -1,13 +1,5 @@
 # LeaveDesk — Employee Leave Management Portal
 
-<p align="center">
-
-![React](https://img.shields.io/badge/React-18-blue)
-![Node.js](https://img.shields.io/badge/Node.js-Express-green)
-![MongoDB](https://img.shields.io/badge/MongoDB-Mongoose-brightgreen)
-![License](https://img.shields.io/badge/License-MIT-orange)
-
-</p>
 
 ---
 
